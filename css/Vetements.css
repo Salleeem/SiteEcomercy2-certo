@@ -389,7 +389,7 @@ body {
     }
 }
 
-/*Carrosel*/
+
 
 p{
     font-size: xx-large;
@@ -497,7 +497,8 @@ body{
 .wsk-cp-text .description-prod p{
   margin:0;
 }
-/* Truncate */
+
+
 .wsk-cp-text .description-prod {
   text-align:center;
   width: 100%;
