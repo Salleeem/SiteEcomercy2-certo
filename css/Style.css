@@ -617,3 +617,21 @@ a.buy-btn{
 
 
 
+footer {
+    background-color: #f0f0f0; /* Cinza claro */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}

@@ -1,93 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho -OFTEN</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/Carrinho.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
 </head>
 
-<body class="">
-    <nav>
-        <div class="hero">
-            <img src="img/hero-images/hero-image2.png">
-        </div>
-        <header>
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/logo-navbar.png">
-                </div>
-                <div class="paginasSite">
-                    <a href="index.html">
-                        <h4>Home</h4>
-                    </a>
-                    <a href="produtos.html">
-                        <h4>Produtos</h4>
-                    </a>
-                </div>
-                <div class="pesquisar">
-                    <div class="barraPesquisa">
-                        <div class="searchIcon">
-                            <a href="#navbar">
-                                <img src="img/icons/search-icon.png">
-                            </a>
-                        </div>
-                        <div class="inputPesquisar">
-                            <input type="text" name="search" id="searchInput" placeholder="Pesquisar...">
-                        </div>
-                        <div class="backgroundPesquisar">
-                            <img src="img/components/search-navbar-background.svg">
-                        </div>
-                    </div>
-                    <div class="icons">
-                        <a href="cadastro.html">
-                            <img src="img/icons/person-icon.png" alt="Cadastro">
-                        </a>
-                        <div>
-                            <div class="shopping">
-                                <img src="img/icons/carshop-icon.svg">
-                                <span class="quantity">0</span>
-                            </div>
-                        </div>
 
+<body>
+
+
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="Index.html"><img src="img/Sprite_Graffiti_Shadow-removebg-preview (3).png" alt="" width="110"
+                        height="50"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="Index.html" <i class="bi bi-house"></a></li>
+                    <li><a href="Produtos.html" <i class="bi bi-bag"></a></li>
+                    <li><a href="Cadastro.html" <i class="bi bi-person-circle"></i></i></a></li>
+                    <li><a href="Carrinho.html" <i class="bi bi-cart3"></a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+
+    <br><br>
+
+
+
+
+
+    <div class="card">
+        <div class="row">
+            <div class="col-md-8 cart">
+                <div class="title">
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Carrinho</b></h4>
+                        </div>
+                        <div class="col align-self-center text-right text-muted">3 itens</div>
                     </div>
                 </div>
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                        <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
+                        <div class="col">
+                            <div class="row text-muted">Shirt</div>
+                            <div class="row">Cotton T-shirt</div>
+                        </div>
+                        <div class="col">
+                            <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                        </div>
+                        <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row main align-items-center">
+                        <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/ba3tvGm.jpg"></div>
+                        <div class="col">
+                            <div class="row text-muted">Shirt</div>
+                            <div class="row">Cotton T-shirt</div>
+                        </div>
+                        <div class="col">
+                            <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                        </div>
+                        <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                    </div>
+                </div>
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                        <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/pHQ3xT3.jpg"></div>
+                        <div class="col">
+                            <div class="row text-muted">Shirt</div>
+                            <div class="row">Cotton T-shirt</div>
+                        </div>
+                        <div class="col">
+                            <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                        </div>
+                        <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                    </div>
+                </div>
+                <div class="back-to-shop"><a href="Produtos.html">&leftarrow;<span class="text-muted">&#8205;  Volte as
+                            compras</span></a></div>
             </div>
-        </header>
-    </nav>
-    <div class="container">
-        <div class="list">
+
+
             
+            <div class="col-md-4 summary">
+                <div>
+                    <h5><b>Summary</b></h5>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="padding-left:0;">&#8205; &#8205; Produtos</div>
+                    <div class="col text-right">R$ 00.00</div>
+                </div>
+                <form>
+                    <p>Frete</p>
+                    <select>
+                        <option class="text-muted">Entrega Padrão R$5.00</option>
+                    </select>
+
+                    <br>
+                    <p>Código de desconto</p>
+
+                    <input id="code" placeholder="Insira o Código">
+                </form>
+                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                    <div class="col">Preço total</div>
+                    <div class="col text-right">R$ 00.00</div>
+                </div>
+                <button class="btn">Pagamento</button>
+            </div>
         </div>
+
     </div>
-    <div class="card">
-        <h1>Seu Carrinho</h1>
-        <ul class="listCard">
-        </ul>
-        <div class="checkOut">
-            <div class="total">0</div>
-            <a href="finalizar.php" style="text-decoration: none; color: #fff;">
-                <div class="closeShopping" style="background-color:#1C1F25 ;">Finalizar</div>
-            </a>
-        </div>
-    </div>
-    <br>
-    <footer>
-        <div class="paginasFooter">
-            <a href="index.html">
-                <h4>Home</h4>
-            </a>
-            <a href="produtos.html">
-                <h4>Produtos</h4>
-            </a>
-        </div>
-        <hr>
-        <h5>© 2023 StellarCart, Inc</h5>
-    </footer>
-    <script src="Carrinho.js"></script>
+
+
 </body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </html>
